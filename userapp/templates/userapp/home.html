@@ -1,0 +1,6 @@
+    {{profile.name}}
+	<ul>
+    {% for tweet in tweets %}
+        <li><a href="/polls/">{{ tweet.text }}</a>{{ tweet.retweet_count }}<br>{{ tweet.favorite_count }}</li>
+    {% endfor %}
+    </ul>
